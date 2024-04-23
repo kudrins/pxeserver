@@ -1,0 +1,7 @@
+---
+- hosts: pxeserver1
+  become: false
+  tasks:
+    - include_tasks: disk-httpd.yml
+    - include_tasks: dhcp-tftp.yml
+
